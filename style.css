@@ -1,0 +1,54 @@
+/* common */
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+/* header */
+header {
+  background-color: aliceblue;
+}
+
+header .container {
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+  /* outline: 3px solid blue; */
+  align-items: center;
+  padding: 32px 0;
+}
+header .container div + div {
+  margin-left: 40px;
+}
+
+header h1 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul li + li {
+  margin-left: 8px;
+}
+
+header .icon {
+  border-radius: 50%;
+}
+
+/* main */
+
+/* footer */
