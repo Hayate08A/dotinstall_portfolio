@@ -8,8 +8,19 @@ img {
 }
 
 h1,
+h2,
 p {
   margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
 }
 
 /* header */
@@ -19,7 +30,6 @@ header {
 
 header .container {
   display: flex;
-  width: 400px;
   margin: 0 auto;
   /* outline: 3px solid blue; */
   align-items: center;
@@ -30,7 +40,6 @@ header .container div + div {
 }
 
 header h1 {
-  font-weight: normal;
   font-size: 24px;
 }
 
@@ -50,5 +59,57 @@ header .icon {
 }
 
 /* main */
+main .container {
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 24px;
+
+  text-align: center;
+  padding: 60px 0;
+  /* margin: 60px 0; */
+  /* background-color: pink;
+  border-bottom: 1px solid red; */
+}
+
+main h2 {
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+main p {
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+main section + section {
+  margin-top: 60px;
+}
 
 /* footer */
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  color: purple;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.7s;
+}
+
+.animate.slide-from-left {
+  transform: translateX(-40px);
+}
+
+.animate.slide-from-right {
+  transform: translateX(40px);
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
